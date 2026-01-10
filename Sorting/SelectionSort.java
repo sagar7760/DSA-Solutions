@@ -21,7 +21,7 @@ public class SelectionSort {
             System.out.print(num + " ");
         }
     }
-    public static int[] selectionSort(int[] nums){
+    public static void selectionSort(int[] nums){
         for(int i=0;i<nums.length;i++){
             int min=i;
             for(int j=i;j<nums.length;j++){
@@ -33,6 +33,5 @@ public class SelectionSort {
             nums[i]=nums[min];;
             nums[min]=temp;
         }
-        return nums;
     }
 }
